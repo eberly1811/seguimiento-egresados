@@ -51,9 +51,7 @@ CREATE TABLE tipo_mantenimiento(
 
 CREATE TABLE rol(
     id_rol SERIAL PRIMARY KEY,
-    nombre_rol VARCHAR(50) NOT NULL,
-
-
+    nombre_rol VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE usuario (
@@ -102,7 +100,7 @@ CREATE TABLE personal(
     apellido_materno VARCHAR(50),
 
     correo VARCHAR(120),
-    telefono VARCHAR(20)
+    telefono VARCHAR(20),
 
     CONSTRAINT fk_personal_tipo
     FOREIGN KEY (id_tipo_personal)
